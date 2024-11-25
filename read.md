@@ -2,4 +2,6 @@
 ##  $\color{blue} \textbf {Project  Workflow}$
 Step 1: Launch instance using 2 cpu and 4 GB memory
 Step 2: Connect Ec2 instance 
+## sudo apt update
+
 
