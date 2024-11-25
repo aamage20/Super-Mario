@@ -87,8 +87,8 @@ kubectl version --client
 ### $\color{red} \textbf {Attach Iam role to the EC2}$
 **go to EC2 click on actions → security → modify IAM role option**
 ![Screenshot (565)](https://github.com/user-attachments/assets/fe9550e8-4253-4820-84e7-842bd97595b9)
-
 ![Screenshot (566)](https://github.com/user-attachments/assets/c3b65c5a-1ad4-4d8e-8a77-64db1d1ec08b)
+
 ### $\color{red} \textbf {Create S3 Bucket}$
 ![WhatsApp Image 2024-11-25 at 4 23 20 PM](https://github.com/user-attachments/assets/92075e18-f566-4052-9a2a-315c8493c723)
 
