@@ -4,9 +4,11 @@
 ````
 sudo apt update
 ````
-install and start using 
+### $\color{red} \textbf {install and start using}$ 
+````
 sudo apt install docker .io
 sudo systemctl start docker
 sudo usermod -aG docker ubuntu
 newgrp docker
 docker --version
+````
