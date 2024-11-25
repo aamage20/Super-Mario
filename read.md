@@ -58,6 +58,7 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 bin: Indicates it's a binary file. 
 linux/amd64: Specifies the platform as Linux and the architecture as AMD64 (common for most modern 64-bit CPUs). 
 kubectl: The Kubernetes command-line tool being downloaded.
+
 **Validate the binary**
 ````
  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
