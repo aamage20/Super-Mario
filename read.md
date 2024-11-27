@@ -91,6 +91,44 @@ kubectl version --client
 
 ### $\color{red} \textbf {Create S3 Bucket}$
 ![WhatsApp Image 2024-11-25 at 4 23 20 PM](https://github.com/user-attachments/assets/92075e18-f566-4052-9a2a-315c8493c723)
-
-
+````
+sudo apt install git -y
+git clone https://github.com/aamage20/Super-Mario.git
+cd Super-Mario
+cd EKS-Terraform
+vim backend.tf
+````
+![Screenshot (567)](https://github.com/user-attachments/assets/685ee5f8-77a7-4384-90ca-91f8f14e5dc6)
+$\color{blue} \textbf {Create \ Infra:}$
+````
+terraform init
+terraform plan
+terraform apply --auto-approve
+````
+````
+aws eks update-kubeconfig --name EKS_CLOUD --region us-west-1 --profile eks
+````
+### $\color{red} \textbf {Creation  of  deployment  and service  for  EKS}$
+change the directory where deployment and service files are stored use the command →
+````
+cd ..
+````
+$\color{blue} \textbf {create  the  deployment}$
+````
+kubectl apply -f deployment.yaml
+````
+$\color{blue} \textbf {Now create  the service}$
+````
+kubectl apply -f service.yaml
+kubectl get all
+kubectl get svc mario-service
+````
+copy the load balancer ingress and paste it on browser and your game is running
+![Screenshot 2024-11-25 154054](https://github.com/user-attachments/assets/965983f1-5e9d-4d0c-bac1-a19d7fc2759e)
+$\color{green} \textbf {Final Output: Enjoy The Game 🎮}$
+![Screenshot 2024-11-25 154158](https://github.com/user-attachments/assets/bc7579fd-7476-4a7f-9096-fb2d5fb357fe)
+**Delete Infra**
+````
+ terraform destroy -auto-approve
+````
 
